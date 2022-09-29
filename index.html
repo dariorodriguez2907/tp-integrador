@@ -19,16 +19,16 @@
 <body>
 
   <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-2">
     <div class="container-fluid">
       <img src="imagenes/codoacodo.png" alt="Codo a Codo" style="width:40px;" class="rounded-pill">
       <a class="navbar-brand" href="#">Conf Bs As</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button>-->
       <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)">La conferencia</a>
           </li>
@@ -40,38 +40,50 @@
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)">Conviérte en orador</a>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Comprar tickets</a>
+            <a class="nav-link color text-success" href="javascript:void(0)">Comprar tickets</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
   <!-- Imagen con caja adentro -->
-  <div class="container" mt-2>
-    <img src="imagenes/ba1.jpg" alt="Edificio de Aguas Argentinas" width="1100" height="500">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="imagenes/ba1.jpg" class="d-block w-100" alt="Edificio de Aguas Argentinas">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenes/ba2.jpg" class="d-block w-100" alt="9 de julio">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenes/ba3.jpg" class="d-block w-100" alt="Palacio">
+      </div>
+    </div>
   </div>
 
-
   <!-- Tarjetas -->
-  <p>CONOCE A LOS ORADORES</p>
-  <H3>ORADORES</H3>
-
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="card-group">
-      <div class="card">
-        <img src="imagenes/steve.jpg" class="card-img-top" alt="Steve Jobs">
-        <div class="card-body">
-          <span class="badge bg-warning">javascript</span>
-          <span class="badge bg-success">React</span>
-          <h5 class="card-title">Steve Jobs</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nam. Enim dignissimos
-            est
-            aliquid officiis cum necessitatibus adipisci, fugiat eligendi earum inventore dolorum omnis. Soluta enim
-            nostrum dolorem et sit?</p>
+  <p class="text-center mt-2 mb-0">CONOCE A LOS ORADORES</p>
+  <h3 class="text-center">ORADORES</h3>
+  <div class="row mx-5 px-5">
+    <div class="col-sm-4">
+      <div class="card-group">
+        <div class="card">
+          <img src="imagenes/steve.jpg" class="card-img-top" alt="Steve Jobs">
+          <div class="card-body">
+            <span class="badge bg-warning">javascript</span>
+            <span class="badge bg-success">React</span>
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nam. Enim dignissimos
+              est
+              aliquid officiis cum necessitatibus adipisci, fugiat eligendi earum inventore dolorum omnis. Soluta enim
+              nostrum dolorem et sit?</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="col-sm-4">
       <div class="card">
         <img src="imagenes/bill.jpg" class="card-img-top" alt="Bill Gates">
         <div class="card-body">
@@ -84,6 +96,9 @@
             fuga deleniti? Voluptates, recusandae nam!</p>
         </div>
       </div>
+    </div>
+
+    <div class="col-sm-4">
       <div class="card">
         <img src="imagenes/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
         <div class="card-body">
@@ -97,54 +112,58 @@
       </div>
     </div>
   </div>
+  <br>
 
   <!-- Imagen y Descripción -->
-  <div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
         <img src="imagenes/honolulu.jpg" alt="Honolulu" class="img-fluid rounded-start">
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem;"></div>
-          <h4 class="card-title">Bs. As. Octubre</h4>
-          <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
-            Estados Unidos Honolulu
-            es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere
-            al
-            área urbana de la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una
-            ciudad
-            condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
-        </div>
+      <div class="col-sm-6 bg-dark text-white">
+        <h4>Bs. As. Octubre</h4>
+        <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos Honolulu
+          es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al
+          área urbana de la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una
+          ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+        <button type="button" class="btn btn-dark btn-outline-light">Conocé más</button>
       </div>
     </div>
   </div>
-  </div>
 
   <!-- Ingreso de datos -->
-  <p>CONVIÉRTE EN UN</p>
-  <H3>ORADOR</H3>
-  <P>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</P>
-  <div class="row row-cols-1 row-cols-md-3 g-4"></div>
-  <div class="container mt-3">
-    <form action="/action_page.php">
-      <div class="mb-3 mt-3">
-        <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
-        <input type="text" class="form-control" id="name" placeholder="Apellido" name="name">
-        <textarea class="form-control" rows="5" id="comment" placeholder="Sobre que quieres hablar?"
-          name="text"></textarea>
+  <p class="text-center mt-3 mb-0">CONVIÉRTE EN UN</p>
+  <h3 class="text-center">ORADOR</h3>
+  <p class="text-center mt-2 mb-0">Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+  <br>
+  <div class="container mt-2 ms-auto">
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+        </div>
       </div>
-      <p>Recuerda incluir un título para tu charla</p>
-      <button type="submit" class="btn btn-success">Enviar</button>
+      <br>
+      <textarea class="form-control" rows="5" id="comment" placeholder="Sobre que quieres hablar?"
+        name="text"></textarea>
+      <br>
+      <p> Recuerda incluir un título para tu charla</p>
+      <br>
+      <div class="d-grid">
+        <button type="button" class="btn btn-success">Enviar</button>
+      </div>
     </form>
   </div>
-  </div>
+  <br>
 
   <!-- Pie de página 
   Barra de Navegación -->
   <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container-fluid">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" href="#">Preguntas Frecuentes</a>
         </li>
@@ -169,8 +188,6 @@
       </ul>
     </div>
   </nav>
-
-
 
 </body>
 
