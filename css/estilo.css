@@ -14,8 +14,9 @@ footer {
   list-style: none;
 }
 
-.carousel-inner {
-  max-height: 30rem;
+.card {
+  display: flex;
+  align-items: stretch;
 }
 
 .conf-bs-as {
