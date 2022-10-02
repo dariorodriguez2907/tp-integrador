@@ -17,3 +17,23 @@ footer {
 .carousel-inner {
   max-height: 30rem;
 }
+
+.conf-bs-as {
+  background-image: url(../imagenes/ba1.jpg);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.conf-bs-as-texto {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+}
